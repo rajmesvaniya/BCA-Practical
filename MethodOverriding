@@ -1,0 +1,19 @@
+class Car {
+    void run() {
+        System.out.println("Car is running");
+    }
+}
+
+class BMW extends Car {
+    @Override
+    void run() {
+        System.out.println("BMW is running fast");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        BMW b = new BMW();
+        b.run();
+    }
+}
